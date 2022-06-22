@@ -21,8 +21,9 @@ with sr.Microphone() as source:
     text = r.recognize_google(audio, language = 'en')
     print(text)
 
-voice = text.isnumeric()
+#voice = text.isnumeric()
+AB = 'i am fine'
 
-engine.say(voice) 
+engine.say(AB) 
 engine.runAndWait()
-print(voice)  
+print(AB)  
